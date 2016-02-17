@@ -12,6 +12,7 @@
 		1502BB361C74EB1B00447115 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1502BB341C74EB1B00447115 /* Main.storyboard */; };
 		1502BB381C74EB1B00447115 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1502BB371C74EB1B00447115 /* Assets.xcassets */; };
 		1502BB3B1C74EB1B00447115 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1502BB391C74EB1B00447115 /* LaunchScreen.storyboard */; };
+		1502BB441C74EB7200447115 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1502BB421C74EB7200447115 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		1502BB371C74EB1B00447115 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1502BB3A1C74EB1B00447115 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1502BB3C1C74EB1B00447115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1502BB431C74EB7200447115 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				1502BB301C74EB1B00447115 /* AppDelegate.swift */,
 				1502BB321C74EB1B00447115 /* ViewController.swift */,
+				1502BB421C74EB7200447115 /* Model.xcdatamodeld */,
 				1502BB341C74EB1B00447115 /* Main.storyboard */,
 				1502BB371C74EB1B00447115 /* Assets.xcassets */,
 				1502BB391C74EB1B00447115 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				1502BB331C74EB1B00447115 /* ViewController.swift in Sources */,
 				1502BB311C74EB1B00447115 /* AppDelegate.swift in Sources */,
+				1502BB441C74EB7200447115 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +292,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1502BB421C74EB7200447115 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1502BB431C74EB7200447115 /* Model.xcdatamodel */,
+			);
+			currentVersion = 1502BB431C74EB7200447115 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1502BB251C74EB1A00447115 /* Project object */;
 }
