@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="14F27" minimumToolsVersion="Xcode 7.0">
-    <entity name="Land" parentEntity="Mammal" syncable="YES">
+    <entity name="Land" representedClassName=".Land" parentEntity="Mammal" syncable="YES">
         <attribute name="legs" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
     </entity>
-    <entity name="Mammal" isAbstract="YES" syncable="YES">
+    <entity name="Mammal" representedClassName=".Mammal" isAbstract="YES" syncable="YES">
         <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="environment" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="Water" parentEntity="Mammal" syncable="YES">
+    <entity name="Water" representedClassName=".Water" parentEntity="Mammal" syncable="YES">
         <attribute name="dorsalFin" optional="YES" attributeType="Boolean" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Land" positionX="-54" positionY="18" width="128" height="60"/>
-        <element name="Mammal" positionX="-63" positionY="-18" width="128" height="90"/>
-        <element name="Water" positionX="-54" positionY="9" width="128" height="60"/>
+        <element name="Land" positionX="-54" positionY="18" width="128" height="58"/>
+        <element name="Mammal" positionX="-288" positionY="207" width="128" height="88"/>
+        <element name="Water" positionX="-180" positionY="-54" width="128" height="58"/>
     </elements>
 </model>

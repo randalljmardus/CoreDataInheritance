@@ -13,6 +13,13 @@
 		1502BB381C74EB1B00447115 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1502BB371C74EB1B00447115 /* Assets.xcassets */; };
 		1502BB3B1C74EB1B00447115 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1502BB391C74EB1B00447115 /* LaunchScreen.storyboard */; };
 		1502BB441C74EB7200447115 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1502BB421C74EB7200447115 /* Model.xcdatamodeld */; };
+		15C3AC6B1C764EFF00D5B565 /* Water+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C3AC651C764EFF00D5B565 /* Water+CoreDataProperties.swift */; };
+		15C3AC6C1C764EFF00D5B565 /* Water.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C3AC661C764EFF00D5B565 /* Water.swift */; };
+		15C3AC6D1C764EFF00D5B565 /* Land+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C3AC671C764EFF00D5B565 /* Land+CoreDataProperties.swift */; };
+		15C3AC6E1C764EFF00D5B565 /* Land.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C3AC681C764EFF00D5B565 /* Land.swift */; };
+		15C3AC6F1C764EFF00D5B565 /* Mammal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C3AC691C764EFF00D5B565 /* Mammal+CoreDataProperties.swift */; };
+		15C3AC701C764EFF00D5B565 /* Mammal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C3AC6A1C764EFF00D5B565 /* Mammal.swift */; };
+		15C3AC721C765F3900D5B565 /* CDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C3AC711C765F3900D5B565 /* CDHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		1502BB3A1C74EB1B00447115 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1502BB3C1C74EB1B00447115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1502BB431C74EB7200447115 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		15C3AC651C764EFF00D5B565 /* Water+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Water+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		15C3AC661C764EFF00D5B565 /* Water.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Water.swift; sourceTree = "<group>"; };
+		15C3AC671C764EFF00D5B565 /* Land+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Land+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		15C3AC681C764EFF00D5B565 /* Land.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Land.swift; sourceTree = "<group>"; };
+		15C3AC691C764EFF00D5B565 /* Mammal+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Mammal+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		15C3AC6A1C764EFF00D5B565 /* Mammal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mammal.swift; sourceTree = "<group>"; };
+		15C3AC711C765F3900D5B565 /* CDHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CDHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +54,12 @@
 		1502BB241C74EB1A00447115 = {
 			isa = PBXGroup;
 			children = (
+				15C3AC651C764EFF00D5B565 /* Water+CoreDataProperties.swift */,
+				15C3AC661C764EFF00D5B565 /* Water.swift */,
+				15C3AC671C764EFF00D5B565 /* Land+CoreDataProperties.swift */,
+				15C3AC681C764EFF00D5B565 /* Land.swift */,
+				15C3AC691C764EFF00D5B565 /* Mammal+CoreDataProperties.swift */,
+				15C3AC6A1C764EFF00D5B565 /* Mammal.swift */,
 				1502BB2F1C74EB1B00447115 /* CoreDataInheritance */,
 				1502BB2E1C74EB1A00447115 /* Products */,
 			);
@@ -61,6 +81,7 @@
 				1502BB421C74EB7200447115 /* Model.xcdatamodeld */,
 				1502BB341C74EB1B00447115 /* Main.storyboard */,
 				1502BB371C74EB1B00447115 /* Assets.xcassets */,
+				15C3AC711C765F3900D5B565 /* CDHelper.swift */,
 				1502BB391C74EB1B00447115 /* LaunchScreen.storyboard */,
 				1502BB3C1C74EB1B00447115 /* Info.plist */,
 			);
@@ -138,9 +159,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15C3AC701C764EFF00D5B565 /* Mammal.swift in Sources */,
 				1502BB331C74EB1B00447115 /* ViewController.swift in Sources */,
 				1502BB311C74EB1B00447115 /* AppDelegate.swift in Sources */,
+				15C3AC6F1C764EFF00D5B565 /* Mammal+CoreDataProperties.swift in Sources */,
+				15C3AC6E1C764EFF00D5B565 /* Land.swift in Sources */,
 				1502BB441C74EB7200447115 /* Model.xcdatamodeld in Sources */,
+				15C3AC721C765F3900D5B565 /* CDHelper.swift in Sources */,
+				15C3AC6C1C764EFF00D5B565 /* Water.swift in Sources */,
+				15C3AC6D1C764EFF00D5B565 /* Land+CoreDataProperties.swift in Sources */,
+				15C3AC6B1C764EFF00D5B565 /* Water+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +318,7 @@
 				1502BB411C74EB1B00447115 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
