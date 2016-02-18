@@ -19,6 +19,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    
+    // createData()
+    
     }
 
     override func didReceiveMemoryWarning() {
@@ -54,5 +57,28 @@ class ViewController: UIViewController {
             print("Error saving!")
         }
     }
+    
+    func fetchAnimals(context: NSManagedObjectContext) -> [Mammal]? {
+        let request = NSFetchRequest(entityName: "Mammal")
+        
+        do {
+            guard let animals = try context.executeFetchRequest(request) as? [Mammal] else {return nil}
+            print(animals.map{"Name: \($0.name!), Environment: \($0.environment)"}.joinWithSeparator("\n"))
+                return animals
+                } catch {
+                print("We couldn't fetch.")
+            }
+            return nil
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
 
