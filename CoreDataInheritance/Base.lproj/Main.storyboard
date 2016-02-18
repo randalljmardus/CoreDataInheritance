@@ -23,6 +23,9 @@
                                 <state key="normal" title="Fetch Data">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="fetchDataTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lam-6U-fuF"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="I9s-QP-0uM">
                                 <rect key="frame" x="20" y="86" width="348" height="404"/>
@@ -34,10 +37,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="resultsLabel" destination="I9s-QP-0uM" id="cId-md-wlH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="303.5" y="389.5"/>
+            <point key="canvasLocation" x="359.5" y="389.5"/>
         </scene>
     </scenes>
 </document>
