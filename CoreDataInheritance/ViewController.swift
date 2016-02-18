@@ -21,6 +21,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     
     // createData()
+        
+     //   guard let context = context else {return}
+     //   fetchAnimals(context)
     
     }
 
@@ -70,15 +73,8 @@ class ViewController: UIViewController {
             }
             return nil
         }
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-}
 
+    func updateUI(animals: [Mammal]) {
+        resultsLabel.text = animals.map{"The \($0.name!) lives in the \($0.environment!)."}.joinWithSeparator("\n")
+    }
+}
