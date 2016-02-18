@@ -33,6 +33,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func fetchDataTapped(sender: UIButton) {
+        guard let context = context, animals = fetchAnimals(context) else {return}
+        updateUI(animals)
     }
     
     func createData() {
@@ -66,7 +68,7 @@ class ViewController: UIViewController {
         
         do {
             guard let animals = try context.executeFetchRequest(request) as? [Mammal] else {return nil}
-            print(animals.map{"Name: \($0.name!), Environment: \($0.environment)"}.joinWithSeparator("\n"))
+            print(animals.map(animalToDescription).joinWithSeparator("\n"))
                 return animals
                 } catch {
                 print("We couldn't fetch.")
@@ -75,6 +77,18 @@ class ViewController: UIViewController {
         }
 
     func updateUI(animals: [Mammal]) {
-        resultsLabel.text = animals.map{"The \($0.name!) lives in the \($0.environment!)."}.joinWithSeparator("\n")
+        resultsLabel.text = animals.map(animalToDescription).joinWithSeparator("\n")
     }
+    
+    func animalToDescription(animal: Mammal) -> String {
+        guard let name = animal.name, environment = animal.environment else {return ""}
+        return "Name: \(name), Environment: \(environment)"
+    }
+    
+    
+    
+    
+    
+    
+    
 }
