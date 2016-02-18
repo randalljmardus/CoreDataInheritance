@@ -8,8 +8,12 @@
         <attribute name="environment" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
+    <entity name="Water" syncable="YES">
+        <attribute name="dorsalFin" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
     <elements>
-        <element name="Mammal" positionX="-63" positionY="-18" width="128" height="90"/>
         <element name="Land" positionX="-54" positionY="18" width="128" height="60"/>
+        <element name="Mammal" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="Water" positionX="-54" positionY="9" width="128" height="60"/>
     </elements>
 </model>
