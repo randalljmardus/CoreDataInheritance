@@ -29,6 +29,16 @@ class ViewController: UIViewController {
     @IBAction func fetchDataTapped(sender: UIButton) {
     }
     
+    func createData() {
+        let landAnimals = [(name: "Dog", legs: 4, environment: "House"), (name: "Lion", legs: 4, environment: "Savannah"), (name: "Elephant", legs: 4, environment: "Savannah"), (name: "Howler monkey", legs: 2, environment: "Jungle")]
+        
+        for land in landAnimals {
+            guard let newLandAnimal = NSEntityDescription.insertNewObjectForEntityForName("Land", inManagedObjectContext: context!) as? Land else {continue}
+            newLandAnimal.name = land.name
+            newLandAnimal.legs = land.legs
+            newLandAnimal.environment = land.environment
+        }
+    }
 
 
 }
