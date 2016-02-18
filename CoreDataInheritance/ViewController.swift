@@ -65,6 +65,8 @@ class ViewController: UIViewController {
     
     func fetchAnimals(context: NSManagedObjectContext) -> [Mammal]? {
         let request = NSFetchRequest(entityName: "Mammal")
+        let dorsalOnly = NSPredicate(format: "dorsalFin = 1")
+        request.predicate = dorsalOnly
         
         do {
             guard let animals = try context.executeFetchRequest(request) as? [Mammal] else {return nil}
