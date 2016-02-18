@@ -38,8 +38,21 @@ class ViewController: UIViewController {
             newLandAnimal.legs = land.legs
             newLandAnimal.environment = land.environment
         }
+        
+        let waterAnimals = [(name: "Otter", dorsalFin: 0, environment: "Rivers"), (name: "Dolphin", dorsalFin: 1, environment: "Ocean"), (name: "Seal", dorsalFin: 0, environment: "Ocean"), (name: "Beluga Whale", dorsalFin: 1, environment: "Ocean")]
+        
+        for water in waterAnimals {
+            guard let newWaterAnimal = NSEntityDescription.insertNewObjectForEntityForName("Water", inManagedObjectContext: context!) as? Water else {continue}
+            newWaterAnimal.name = water.name
+            newWaterAnimal.dorsalFin = water.dorsalFin
+            newWaterAnimal.environment = water.environment
+        }
+        
+        do {
+            try context!.save()
+        } catch {
+            print("Error saving!")
+        }
     }
-
-
 }
 
